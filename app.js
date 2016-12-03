@@ -13,3 +13,6 @@ function birthdayCounter(year, month, day) {
   }
   console.log(daysOfWeek);
 }
+
+
+// Notes: Make a "switch" for "month."

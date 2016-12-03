@@ -22,3 +22,6 @@ Colors
 body {
   background: linen;
 }
+
+
+/* Notes: Do mobile-first approach, adding media queries later. */

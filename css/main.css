@@ -1,0 +1,24 @@
+/****************
+General
+****************/
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, sans-serif;
+  font-size: 1em;
+}
+
+p {
+  line-height: 1.4;
+}
+
+/****************
+Colors
+****************/
+body {
+  background: linen;
+}

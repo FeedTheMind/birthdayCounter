@@ -15,4 +15,4 @@ function birthdayCounter(year, month, day) {
 }
 
 
-// Notes: Make a "switch" for "month."
+// Notes: Make a "switch" (or loop) for "month."

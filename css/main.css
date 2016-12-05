@@ -16,6 +16,30 @@ p {
   line-height: 1.4;
 }
 
+.sectionTwo input {
+  display: block;
+  font-family: Georgia, sans-serif;
+}
+
+/****************
+Layout
+****************/
+.mainHeader {
+  text-align: center;
+}
+
+.mainWrapper {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+footer {
+  text-align: center;
+}
+/****************
+Queries
+****************/
+
 /****************
 Colors
 ****************/

@@ -26,16 +26,34 @@ Layout
 ****************/
 .mainHeader {
   text-align: center;
+  min-height: 250px;
 }
 
 .mainWrapper {
-  margin: 0 auto;
+ /* margin: 0 auto;
   max-width: 1000px;
+  width: 80%;*/
+}
+
+.arrow {
+  width: 40px;
+  padding-top: 200px;
 }
 
 footer {
   text-align: center;
 }
+
+/****************
+Clear
+****************/
+.clearfix::before,
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
 /****************
 Queries
 ****************/
@@ -44,8 +62,14 @@ Queries
 Colors
 ****************/
 body {
-  background: linen;
+  background: #dc8c38;
 }
 
+.mainHeader {
+  background: url('../img/pexels-photo-48663.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
 /* Notes: Do mobile-first approach, adding media queries later. */

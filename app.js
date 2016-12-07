@@ -1,3 +1,5 @@
+'use strict';
+
 function birthdayCounter(year, month, day) {
   // Array with seven elements, each representing a day of the week
   // daysOfWeek[0] is Sunday; daysOfWeek[6] is Saturday
@@ -13,6 +15,5 @@ function birthdayCounter(year, month, day) {
   }
   console.log(daysOfWeek);
 }
-
 
 // Notes: Make a "switch" (or loop) for "month."

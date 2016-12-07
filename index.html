@@ -13,20 +13,45 @@
       </header>
       
       <div class='mainWrapper'>
-        <section class='sectionOne'>
-          <p>Note: This is placeholder text.</p>
-          <p>Note: This is placeholder text.</p>
-          <p>Note: This is placeholder text.</p>
+        <section class='sectionOne col'>
+          <p>Once a year you get to enjoy the greatest byproduct of birth&#8212;your birthday!</p>
+          <p>What makes a birthday extra special is when it lands on Friday, Saturday, or Sunday.</p>
+          <p>With this application, you can determine how many weekend (or weekday) birthdays you will have from now until your chosen year.</p>
+          <p>To see if you will be celebrating as a weekend warrior, select the month and day when you were born, followed by any year.</p>
+          <!-- Provide example -->
         </section>
-        <section class='sectionTwo'>
-          <input type='text' class='month' value='January'>
+        <section class='sectionTwo col'>
+          <select name='months' id='months'>
+            <option value='0'>January</option>
+            <option value='1'>February</option>
+            <option value='2'>March</option>
+            <option value='3'>April</option>
+            <option value='4'>May</option>
+            <option value='5'>June</option>
+            <option value='6'>July</option>
+            <option value='7'>August</option>
+            <option value='8'>September</option>
+            <option value='9'>October</option>
+            <option value='10'>November</option>
+            <option value='11'>December</option>
+          </select>
           <input type='number' class='day' min='1' value='1'>
-          <!-- Note: Use JS to add current year; for now, use "value" -->
           <input type='number' class='year' min='2016' value='2016'>
-          <input type='button' value='Birthday, Away!'>
+          <input type='button' class ='birthdayButton' value='Birthday, Away!'>
         </section>
-        <table class='daysOfWeek'>
-        </table>
+        <section class='sectionThree col'>
+          <table class='daysOfWeek'>
+            <tr>
+              <td>Monday:</td>
+              <td>Tuesday:</td>
+              <td>Wednesday:</td>
+              <td>Thursday:</td>
+              <td>Friday:</td>
+              <td>Saturday:</td>
+              <td>Sunday:</td>
+            </tr>
+          </table>
+        </section>
       </div> <!-- .mainWrapper -->
       
     </div> <!-- .wrapper -->

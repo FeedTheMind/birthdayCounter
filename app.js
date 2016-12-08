@@ -17,3 +17,5 @@ function birthdayCounter(year, month, day) {
 }
 
 // Notes: Make a "switch" (or loop) for "month."
+
+// Use "values" from options for month parameter

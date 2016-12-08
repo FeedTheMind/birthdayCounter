@@ -10,7 +10,8 @@ General
 body {
   font-family: Georgia, sans-serif;
   font-size: 1em;
-  padding-top: 250px; /* Move content hidden by "fixed" header*/
+  /* Use later */
+  /*padding-top: 250px;  Move content hidden by "fixed" header*/
 }
 
 p {
@@ -27,10 +28,11 @@ Layout
 .mainHeader {
   text-align: center;
   min-height: 250px;
-  width: 100%;
+  /* Use later */
+  /*width: 100%;
   position: fixed;
-  z-index: 100; /* High value for later use */
-  top: 0;
+  z-index: 100;
+  top: 0;*/
 }
 
 .mainWrapper {

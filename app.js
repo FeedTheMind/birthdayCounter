@@ -1,10 +1,10 @@
 'use strict';
 
-var birthdayButton = document.getElementsByClassName('birthdayButton')[0];
-var dayInput = document.querySelector('.day');
-var yearInput = document.querySelector('.year');
+var birthdayButton = document.querySelector('.birthdayButton');
+var dayInput = document.querySelector('input.day');
+var yearInput = document.querySelector('input.year');
 var monthsSelect = document.getElementById('months');
-
+var tdDaysOfWeek = document.querySelectorAll('.daysOfWeek td')
 
 birthdayButton.addEventListener('click', function() {
   birthdayCounter(yearInput.value, monthsSelect.value, dayInput.value);
@@ -20,18 +20,20 @@ function birthdayCounter(year, month, day) {
 
   // Compare i to date input by user
   // Have i <= year so that user can test current year or greater
-  for(var i = new Date().getFullYear(); i <= year; i++) {
+  for (var i = new Date().getFullYear(); i <= year; i++) {
     // Update array accordingly
     daysOfWeek[new Date(i, month, day).getDay()]++;
   }
-  console.log(daysOfWeek);
+
+  for (var i = 0; i < tdDaysOfWeek.length; i++) {
+    // Update tdDaysOfWeek with values from daysOfWeek array
+    tdDaysOfWeek[i].textContent += daysOfWeek[i];
+  }
 }
 
 /****************
 Notes
 ****************/
-
-// Parse string values to number values
 
 // Watch for NaN if input too high
 

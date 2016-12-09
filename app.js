@@ -1,6 +1,15 @@
 'use strict';
 
 var birthdayButton = document.getElementsByClassName('birthdayButton')[0];
+var dayInput = document.querySelector('.day');
+var yearInput = document.querySelector('.year');
+var monthsSelect = document.getElementById('months');
+
+
+birthdayButton.addEventListener('click', function() {
+  birthdayCounter(yearInput.value, monthsSelect.value, dayInput.value);
+});
+
 
 function birthdayCounter(year, month, day) {
   // Array with seven elements, each representing a day of the week
@@ -18,6 +27,12 @@ function birthdayCounter(year, month, day) {
   console.log(daysOfWeek);
 }
 
-// Notes: Make a "switch" (or loop) for "month."
+/****************
+Notes
+****************/
 
-// Use "values" from options for month parameter
+// Parse string values to number values
+
+// Watch for NaN if input too high
+
+// Apply a maximum value to input year and input date, with JS

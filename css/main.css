@@ -55,7 +55,8 @@ Layout
   padding-left: 3px;
 }
 
-.sectionTwo select {
+.sectionTwo select,
+.day {
   width: 160px;
 }
 

@@ -1,5 +1,7 @@
 'use strict';
 
+var birthdayButton = document.getElementsByClassName('birthdayButton')[0];
+
 function birthdayCounter(year, month, day) {
   // Array with seven elements, each representing a day of the week
   // daysOfWeek[0] is Sunday; daysOfWeek[6] is Saturday

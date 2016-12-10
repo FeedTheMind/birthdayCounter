@@ -8,13 +8,13 @@ var tdDaysOfWeek = document.querySelectorAll('.daysOfWeek td')
 
 var tdLength = tdDaysOfWeek[0].textContent.length; // Initial length
 var daysArray = [
+  'Sunday: ',
   'Monday: ',
   'Tuesday: ',
   'Wednesday: ',
   'Thursday: ',
   'Friday: ',
-  'Saturday: ',
-  'Sunday: '
+  'Saturday: '
 ];
 
 birthdayButton.addEventListener('click', function() {
@@ -57,5 +57,3 @@ Notes
 // Watch for NaN if input too high
 
 // Apply a maximum value to input year and input date, with JS
-
-// Off by one

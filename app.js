@@ -6,12 +6,31 @@ var yearInput = document.querySelector('input.year');
 var monthsSelect = document.getElementById('months');
 var tdDaysOfWeek = document.querySelectorAll('.daysOfWeek td')
 
+var tdLength = tdDaysOfWeek[0].textContent.length; // Initial length
+var daysArray = [
+  'Monday: ',
+  'Tuesday: ',
+  'Wednesday: ',
+  'Thursday: ',
+  'Friday: ',
+  'Saturday: ',
+  'Sunday: '
+];
+
 birthdayButton.addEventListener('click', function() {
   birthdayCounter(yearInput.value, monthsSelect.value, dayInput.value);
 });
 
 
 function birthdayCounter(year, month, day) {
+  // See if tdLength has increased
+  if (tdDaysOfWeek[0].textContent.length > tdLength) {
+    for (var x = 0; x < daysArray.length; x++) {
+      // Change content to match daysArray, a form of "clearing"
+      tdDaysOfWeek[x].textContent = daysArray[x];
+    }
+  }
+
   // Array with seven elements, each representing a day of the week
   // daysOfWeek[0] is Sunday; daysOfWeek[6] is Saturday
   var daysOfWeek = [

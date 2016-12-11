@@ -17,7 +17,7 @@ var daysArray = [
   'Saturday: '
 ];
 
-birthdayButton.addEventListener('click', function() {
+birthdayButton.addEventListener('click', function () {
   birthdayCounter(yearInput.value, monthsSelect.value, dayInput.value);
 });
 
@@ -57,3 +57,10 @@ Notes
 // Watch for NaN if input too high
 
 // Apply a maximum value to input year and input date, with JS
+
+// Event bubbling
+  // Children of ancestor respond "click," etc., example below
+  // document.addEventListener('click', function(event) {
+  //   console.log(event.target);
+  // });
+// event.target and event.target.tagName useful to isolate elements

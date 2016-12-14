@@ -10,12 +10,12 @@ General
 body {
   font-family: Georgia, sans-serif;
   font-size: 1em;
-  /* Use later */
+  /* Maybe use */
   /*padding-top: 250px;  Move content hidden by "fixed" header*/
 }
 
 p {
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 /****************
@@ -28,7 +28,8 @@ Layout
 .mainHeader {
   text-align: center;
   min-height: 250px;
-  /* Use later */
+  margin-bottom: 25px;
+  /* Maybe use */
   /*width: 100%;
   position: fixed;
   z-index: 100;
@@ -38,11 +39,17 @@ Layout
 .mainWrapper {
   padding-left: 1em;
   padding-right: 1em;
+  margin-bottom: 1em;
 }
 
 .arrow {
   width: 40px;
   padding-top: 200px;
+}
+
+.sectionTwo,
+.sectionThree {
+  float: left;
 }
 
 .sectionTwo input,
@@ -66,6 +73,12 @@ Layout
   padding-right: 20px;
   padding-left: 3px;
   font-weight: bold;
+  margin-left: 10px;
+  line-height: 1.5em;
+}
+
+.daysOfWeek { /* table */
+  margin-top: -2px;
 }
 
 footer {
@@ -77,21 +90,33 @@ footer {
 /****************
 Layout Styles
 ****************/
-
-/****************
-Clear
-****************/
-.clearfix::before,
-.clearfix::after {
-  content: '';
-  display: table;
-  clear: both;
+.sectionTwo input,
+.sectionTwo select {
+  outline: none;
+  cursor: pointer;
+  background: lightgray;
+  border: 2px solid transparent;
 }
 
-/****************
-Queries
-****************/
-/* Notes: Do mobile-first approach, adding media queries later. */
+.sectionTwo input:hover,
+.sectionTwo select:hover,
+.sectionTwo input:focus,
+.sectionTwo select:focus {
+  border: 2px solid seagreen;
+}
+
+.sectionTwo [type=button] {
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: rgba(220, 82, 82, 1);
+  border: 2px solid transparent; /* Setting size and transparency prevent shifting content on "hover" or "focus" */
+  font-size: 1.1em;
+}
+
+.sectionTwo [type=button]:hover,
+.sectionTwo [type=button]:focus {
+  border: 2px solid;
+}
 
 /****************
 Colors
@@ -109,4 +134,65 @@ body {
 
 footer {
   background: rgba(178, 45, 27, .95);
+}
+
+.daysOfWeek td {
+  background: lightseagreen;
+}
+
+/****************
+Queries
+****************/
+@media (min-width: 700px) {
+  .mainWrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .col {
+    float: left;
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+
+  .sectionOne {
+    width: 70%;
+  }
+
+  .sectionTwo,
+  .sectionThree {
+    width: 30%;
+    margin-top: 1em;
+  }
+
+  .sectionThree {
+    margin-bottom: 8px;
+  }
+
+  p {
+    font-size: 1.1em;
+  }
+
+  .sectionTwo [type=button]:hover,
+  .sectionTwo [type=button]:focus {
+    text-transform: uppercase;
+    border: 2px solid;
+  }
+}
+
+@media (min-width: 1025px) {
+  .mainWrapper {
+    width: 80%;
+    max-width: 1150px;
+  }
+}
+
+/****************
+Clear
+****************/
+.clearfix::before,
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
 }

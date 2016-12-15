@@ -4,7 +4,7 @@ var birthdayButton = document.querySelector('.birthdayButton');
 var dayInput = document.querySelector('input.day');
 var yearInput = document.querySelector('input.year');
 var monthsSelect = document.getElementById('months');
-var tdDaysOfWeek = document.querySelectorAll('.daysOfWeek td')
+var tdDaysOfWeek = document.querySelectorAll('.daysOfWeek td');
 
 var tdLength = tdDaysOfWeek[0].textContent.length; // Initial length
 var daysArray = [
@@ -16,6 +16,11 @@ var daysArray = [
   'Friday: ',
   'Saturday: '
 ];
+
+// Insert value of current year into HTML
+yearInput.value = new Date().getFullYear();
+// Insert min as current year into HTML
+yearInput.min = new Date().getFullYear();
 
 birthdayButton.addEventListener('click', function () {
   birthdayCounter(yearInput.value, monthsSelect.value, dayInput.value);

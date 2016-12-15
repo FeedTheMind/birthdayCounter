@@ -19,6 +19,7 @@ var daysArray = [
 
 birthdayButton.addEventListener('click', function () {
   birthdayCounter(yearInput.value, monthsSelect.value, dayInput.value);
+  yearInput.focus();
 });
 
 

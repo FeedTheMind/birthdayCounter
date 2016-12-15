@@ -176,7 +176,6 @@ Queries
   .sectionTwo [type=button]:hover,
   .sectionTwo [type=button]:focus {
     text-transform: uppercase;
-    border: 2px solid;
   }
 }
 

@@ -63,7 +63,8 @@ Layout
 }
 
 .sectionTwo select,
-.day {
+.day,
+.year {
   width: 160px;
 }
 

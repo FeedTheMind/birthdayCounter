@@ -21,6 +21,8 @@ var daysArray = [
 yearInput.value = new Date().getFullYear();
 // Insert min as current year into HTML
 yearInput.min = new Date().getFullYear();
+// Insert max as (current year + 1000)
+yearInput.max = new Date().getFullYear() + 1000;
 
 birthdayButton.addEventListener('click', function () {
   birthdayCounter(yearInput.value, monthsSelect.value, dayInput.value);
@@ -60,9 +62,7 @@ function birthdayCounter(year, month, day) {
 Notes
 ****************/
 
-// Watch for NaN if input too high
-
-// Apply a maximum value to input year and input date, with JS
+// Have "enter" for button and last input
 
 // Event bubbling
   // Children of ancestor respond "click," etc., example below

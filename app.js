@@ -64,6 +64,8 @@ Notes
 
 // Have "enter" for button and last input
 
+// Remove "focus" from button, in smaller devices, after press
+
 // Event bubbling
   // Children of ancestor respond "click," etc., example below
   // document.addEventListener('click', function(event) {

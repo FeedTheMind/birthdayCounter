@@ -182,6 +182,10 @@ Queries
   .daysOfWeek td {
     margin-left: 0;
   }
+
+  .arrow {
+    display: none;
+  }
 }
 
 @media (min-width: 1025px) {

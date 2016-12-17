@@ -25,6 +25,7 @@ yearInput.min = new Date().getFullYear();
 // Insert max as (current year + 1000)
 yearInput.max = new Date().getFullYear() + 1000;
 
+// Insert values to aid user
 spanYear[0].innerHTML = new Date().getFullYear();
 spanYear[1].innerHTML = new Date().getFullYear() + 1000;
 

@@ -5,6 +5,7 @@ var dayInput = document.querySelector('input.day');
 var yearInput = document.querySelector('input.year');
 var monthsSelect = document.getElementById('months');
 var tdDaysOfWeek = document.querySelectorAll('.daysOfWeek td');
+var spanYear = document.querySelectorAll('.sectionOne span');
 
 var tdLength = tdDaysOfWeek[0].textContent.length; // Initial length
 var daysArray = [
@@ -23,6 +24,9 @@ yearInput.value = new Date().getFullYear();
 yearInput.min = new Date().getFullYear();
 // Insert max as (current year + 1000)
 yearInput.max = new Date().getFullYear() + 1000;
+
+spanYear[0].innerHTML = new Date().getFullYear();
+spanYear[1].innerHTML = new Date().getFullYear() + 1000;
 
 birthdayButton.addEventListener('click', function () {
   birthdayCounter(yearInput.value, monthsSelect.value, dayInput.value);

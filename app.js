@@ -29,6 +29,13 @@ birthdayButton.addEventListener('click', function () {
   yearInput.focus();
 });
 
+yearInput.addEventListener('keypress', function (event) {
+  if (event.keyCode === 13) {
+    birthdayCounter(yearInput.value, monthsSelect.value, dayInput.value);
+    yearInput.focus();
+  }
+});
+
 
 function birthdayCounter(year, month, day) {
   // See if tdLength has increased
@@ -61,8 +68,6 @@ function birthdayCounter(year, month, day) {
 /****************
 Notes
 ****************/
-
-// Have "enter" for button and last input
 
 // Remove "focus" from button, in smaller devices, after press
 
